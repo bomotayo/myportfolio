@@ -70,11 +70,11 @@ function addStar() {
 //created 200 randomly positioned stars
 Array(200).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load("space.jpeg");
+const spaceTexture = new THREE.TextureLoader().load("./imgs/space.jpeg");
 scene.background = spaceTexture;
 
 // Avatar
-const tundeTexture = new THREE.TextureLoader().load("tunde.jpg");
+const tundeTexture = new THREE.TextureLoader().load("./imgs/tunde.jpg");
 
 const tunde = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
@@ -84,8 +84,8 @@ const tunde = new THREE.Mesh(
 scene.add(tunde);
 
 //Moon mesh
-const moonTexture = new THREE.TextureLoader().load("moon.jpeg");
-const normalTexture = new THREE.TextureLoader().load("normal.jpeg");
+const moonTexture = new THREE.TextureLoader().load("./imgs/moon.jpeg");
+const normalTexture = new THREE.TextureLoader().load("./imgs/normal.jpeg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),

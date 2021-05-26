@@ -81,7 +81,7 @@ blockquote p {
 }
 .input-fields {
   width: 100%;
-  margin-left: 2.5% !important;
+  margin-left: 8% !important;
 }
 textarea {
   width: 92% !important;
@@ -151,6 +151,8 @@ textarea {
     width: 500px !important;
   }
   input {
+    margin-left: -10% !important;
+
     width: 262px !important;
     margin-bottom: 5% !important;
   }
