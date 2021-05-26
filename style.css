@@ -84,8 +84,9 @@ blockquote p {
   margin-left: 8% !important;
 }
 textarea {
-  width: 92% !important;
+  width: 80% !important;
   position: relative;
+  right: 4px;
 }
 
 .btn {
@@ -155,6 +156,10 @@ textarea {
 
     width: 262px !important;
     margin-bottom: 5% !important;
+  }
+  textarea {
+    width: 88% !important;
+    right: 1px;
   }
   .quote {
     font-size: 3em;
