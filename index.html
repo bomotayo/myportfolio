@@ -21,10 +21,10 @@
     <nav>
       <div class="ui secondary pointing menu">
         <div class="right menu nav">
-          <a class="item" href="#skills"> SKILLS </a>
-          <a class="item" href="#portfolio"> PORTFOLIO </a>
-          <a class="item" href="#work"> WORK </a>
-          <a class="item" href="#contact"> CONTACT </a>
+          <a class="item" href="#skills" aria-label="skills"> SKILLS </a>
+          <a class="item" href="#portfolio" aria-label="portfolio"> PORTFOLIO </a>
+          <a class="item" href="#work" aria-label="work"> WORK </a>
+          <a class="item" href="#contact" aria-label="contact"> CONTACT </a>
         </div>
       </div>
     </nav>
@@ -38,6 +38,7 @@
             class="icon-link"
             href="https://github.com/bomotayo/"
             target="_blank"
+             aria-label="github"
           >
             <i class="github icon"></i>
           </a>
@@ -45,6 +46,7 @@
             class="icon-link"
             href="https://babatundeomotayo.wordpress.com/"
             target="_blank"
+             aria-label="wordpress"
           >
             <i class="wordpress icon"></i>
           </a>
@@ -52,10 +54,11 @@
             class="icon-link"
             href="https://www.linkedin.com/in/tunde-omotayo/"
             target="_blank"
+             aria-label="linkedin"
           >
             <i class="linkedin icon"></i>
           </a>
-          <a class="icon-link" href="./imgs/TO_resume.pdf" target="_blank">
+          <a class="icon-link" href="./imgs/TO_resume.pdf" target="_blank" aria-label="resume">
             <i class="file alternate icon"></i>
           </a>
         </div>
@@ -453,24 +456,25 @@
         <form class="ui form" id="contactForm">
           <div class="fields input-fields">
             <div class="field">
-              <input type="text" placeholder="Name*" id="name" required />
+              <input aria-label="name" type="text" placeholder="Name*" id="name" required />
             </div>
             <div class="field">
-              <input type="email" placeholder="Email*" id="email" required />
+              <input aria-label="email" type="email" placeholder="Email*" id="email" required />
             </div>
             <div class="field">
-              <input type="text" id="phone" placeholder="Phone(Optional)" />
+              <input aria-label="phone" type="text" id="phone" placeholder="Phone(Optional)" />
             </div>
           </div>
           <div class="field">
             <textarea
+              aria-label="message"
               placeholder="Your Message...*"
               cols="50"
               id="message"
               required
             ></textarea>
           </div>
-          <button class="ui button btn">SEND MESSAGE</button>
+          <button aria-label="send message" class="ui button btn">SEND MESSAGE</button>
         </form>
       </section>
     </main>
