@@ -32,7 +32,7 @@
     <main>
       <header>
         <h1>Tunde Omotayo</h1>
-        <p class="hero-desc">🚀 Welcome to my website!</p>
+        <p class="hero-desc"><span aria-hidden="true">🚀</span> Welcome to my website!</p>
         <div>
           <a
             class="icon-link"
@@ -71,7 +71,7 @@
         </p>
       </blockquote>
       <section class="left" id="skills">
-        <h2>👩🏽‍🚀 Skills</h2>
+        <h2><span aria-hidden="true">👩🏽‍🚀</span> Skills</h2>
 
         <div class="ui bulleted list">
           <div class="item">
@@ -101,7 +101,7 @@
           <div class="item">DESIGN: Adobe Photoshop</div>
         </div>
 
-        <h2>🏆 Education & Certification</h2>
+        <h2><span aria-hidden="true">🏆</span> Education & Certification</h2>
         <div class="ui bulleted list">
           <div class="item">
             Bachelor Of Engineering In Electrical Engineering
@@ -138,13 +138,9 @@
           </div>
           <div class="column portfolio-card">
             <div class="ui card">
-              <a
-                class="image"
-                href="https://bomotayo.github.io/Expense-Tracker/"
-                target="_blank"
-              >
-                <img src="/myportfolio/assets/expense_tracker_720x480.09f118a6.jpg" alt="Expense tracker"/>
-              </a>
+ 
+                <img class="image" src="/myportfolio/assets/expense_tracker_720x480.09f118a6.jpg" alt="Expense tracker"/>
+ 
               <div class="content">
                 <a
                   class="header"
@@ -456,18 +452,21 @@
         <form class="ui form" id="contactForm">
           <div class="fields input-fields">
             <div class="field">
-              <input aria-label="name" type="text" placeholder="Name*" id="name" required />
+              <label for="name" hidden>Name</label>
+              <input type="text" placeholder="Name*" id="name" required />
             </div>
             <div class="field">
-              <input aria-label="email" type="email" placeholder="Email*" id="email" required />
+              <label for="email" hidden>Email</label>
+              <input type="email" placeholder="Email*" id="email" required />
             </div>
             <div class="field">
-              <input aria-label="phone" type="text" id="phone" placeholder="Phone(Optional)" />
+              <label for="phone" hidden>Phone</label>
+              <input type="text" id="phone" placeholder="555-555-5555" />
             </div>
           </div>
           <div class="field">
+           <label for="message" hidden>Message</label>
             <textarea
-              aria-label="message"
               placeholder="Your Message...*"
               cols="50"
               id="message"
